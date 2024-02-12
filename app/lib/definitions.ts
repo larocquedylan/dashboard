@@ -44,6 +44,13 @@ export type LatestInvoiceRaw = Omit<LatestInvoice, 'amount'> & {
   amount: number;
 };
 
+export type CardWrapperProps = {
+  totalPaidInvoices: number;
+  totalPendingInvoices: number;
+  numberOfInvoices: string;
+  numberOfCustomers: string;
+};
+
 export type InvoicesTable = {
   id: string;
   customer_id: string;
